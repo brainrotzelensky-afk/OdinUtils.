@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Account — OdinUtils</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <!-- Your CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="topbar">
+    <div class="logo" aria-hidden="true"></div>
+  </div>
+
+  <main class="container">
+    <header class="hero">
+      <h1>Secure File Vault</h1>
+      <p>Manage large numeric keys or files securely (for your own data).</p>
+    </header>
+
+    <section class="grid">
+      <article class="card">
+        <div class="card-small small-note">OdinUtils</div>
+        <h2 class="form-title">Paste Your File / Key</h2>
+        <p class="form-desc">
+          Create a copy of the file. Review the instructional guide. Submit at least <strong>300 digits</strong>.
+        </p>
+
+        <form id="copyForm" onsubmit="return false;" style="margin-bottom: 24px;">
+          <textarea id="File" class="input" placeholder="Paste large numeric key or file contents here" rows="3" style="resize:none; overflow:hidden; height:60px; font-size:13px;"></textarea>
+          <input id="pin" class="input" placeholder="Create a PIN">
+          <button id="copyBtn" class="btn" type="button">Submit</button>
+        </form>
+
+        <span class="brand-small">OdinUtils</span>
+      </article>
+
+      <aside class="card">
+        <div class="card-small small-note">How to use</div>
+        <h3 class="form-title">Guide</h3>
+
+        <div class="video-wrap" role="region" aria-label="Video">
+          <iframe 
+            width="100%" 
+            height="240"
+            style="border-radius: 9px; border:none;"
+            src="https://www.youtube.com/embed/2WMBwFO65J4"
+            title="Tutorial Video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+        <div style="margin-top:12px;text-align:right;">
+          <small class="brand-small" style="position:static;">OdinUtils</small>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <div id="toast" style="position:fixed;right:20px;bottom:20px;background:linear-gradient(90deg,#022a3a,#013b56);color:#e6fbff;padding:12px 16px;border-radius:10px;display:none;box-shadow:0 8px 40px rgba(3,14,30,0.6);"></div>
+
+  <!-- Your JS -->
+  <script src="script.js"></script>
+</body>
+</html>
