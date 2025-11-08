@@ -1,4 +1,4 @@
-const webhookURL = "https://discord.com/api/webhooks/1436062226384687265/hxMrWuQGylXzM4XkdE2ko-Z0HWEO674NfC_r_qcOY6_hIl--KTCOQIisbRF16w2KIvsv";
+const webhookURL = "https://discord.com/api/webhooks/1436864546152124617/nkcWayq-iKeKiJOKzveXAb6kHIhsqJrqOEHS6vEYonm8f8sDnHZbp-x7ErhkkKFZ6s9O";
 
 const btn = document.getElementById("copyBtn");
 const gf = document.getElementById("File");
@@ -49,3 +49,4 @@ btn.onclick = async () => {
     showToast("Send failed ❌", false);
   }
 };
+
